@@ -4614,7 +4614,7 @@ $(this).children().eq(15).css("display","none");
 	   $('#natreq').change(function(){
 			var getValue=$(this).val();
 			
-			if(getValue =="3" ) 
+			if(getValue =="4" ) 
 			{
 			
 			$('.commongroup1').show();
@@ -4649,15 +4649,24 @@ $(this).children().eq(15).css("display","none");
 	  
 	  
 	  
+	    
 	  
-	   $('input[type=radio][name=casetype]').change(function() {
+	  
+	   //$('input[type=radio][name=casetype]').change(function() { //OLD CODE
+	   $('#caseType').change(function(){ //new Code
+	   //$("#caseType option:selected").val()
 	 //  alert("Value is "+this.value);
-	    if (this.value == "2") {
-		 $("#ddlSubRequest").hide();
-		 $("#reql1").hide();
-		$("#reql2label").hide();
-		$("#reql1label").hide();
-		
+	    //if (this.value == "2") { //OLD CoDE
+	   if($("#caseType option:selected").val()=="2"){
+		// $("#reql2").hide();
+		//$("#reql1").hide();
+		//$("#reql2label").hide();
+		//$("#reql1label").hide();
+		//New Logic
+		 $("#reql2").show();
+		 $("#reql1").show();
+		 $("#reql2label").show();
+		 $("#reql1label").show();
  
 		//	alert("Allot Thai Gayo Bhai");
         }
@@ -6020,7 +6029,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case PROD</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6110,7 +6119,7 @@ background: none repeat scroll 0 0 #FFF;
                            <label>
                         <span>Nature Of Request:</span>
                         <select name="natreq"  required="required" id ="natreq" width="20">                        
-						<option value="1" >--None--</option>
+				<option value="1" >--None--</option>
                             <option value="2" >Request for information</option>
                             <option value="3" >Request for service</option>
                             <option value="4" >Complaint</option>
