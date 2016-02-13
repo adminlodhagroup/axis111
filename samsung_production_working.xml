@@ -5407,6 +5407,7 @@ getCaseDetailsbyRegEmail(subject);
 			
 			if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "" || $("#sNAFD option:selected").val() =="" || $("#sNAFD option:selected").val() =="0")
 			{
+				alert("TEST txtcaseres 4");
 			alert("Kindly choose the mandatory values");
 			return false;
 			}
@@ -5418,6 +5419,7 @@ getCaseDetailsbyRegEmail(subject);
 			
 				if($("#txtcaseres").val() =="" || $("#txtcasesumm").val() == "")
 				{
+				alert("TEST txtcaseres 8");
 				alert("Kindly choose the mandatory values");
 				return false;
 				}
@@ -6029,7 +6031,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case prod</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case prod1</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
