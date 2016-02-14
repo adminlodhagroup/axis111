@@ -5511,12 +5511,16 @@ else{
 				   if($('#caseType :selected').text()!= "Multiple Request")
 				   {            
 				  //https://c.cs8.visual.force.com/apex/EditCasesForRM?id=500L0000003MbW0
-				  var x ="https://eu1.salesforce.com/apex/EditCasesForRM?id="+data.caseId;              
+				  //var x ="https://eu1.salesforce.com/apex/EditCasesForRM?id="+data.caseId;//Old url
+				  var x ="https://c.eu1.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
+				  //var x ="https://c.cs8.visual.force.com/apex/EditCasesForRM?id="+data.caseId;
                   window.open(x,"_blank","","");
 				  }
 				  else
 				  {
-				  var x = "https://eu1.salesforce.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";				
+				  //var x = "https://eu1.salesforce.com/apex/CM_ChildCaseCreatePage?acctId="+data.AccountId+"&ParentId="+data.caseId+"&ptype=Multiple Request";				
+				  //var x = "https://c.cs8.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
+				  var x = "https://c.eu1.visual.force.com/apex/CM_CaseCreation?id="+data.caseId+"&acctId="+data.AccountId; //new URL mrunali
                   window.open(x,"_blank","","");
 				  
 				  }
@@ -6017,7 +6021,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email to a Case</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email To A Case</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
