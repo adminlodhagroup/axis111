@@ -1579,8 +1579,8 @@ border-radius: 9px;
 	height:100px;
 }
 .elegant-aero select {
-    background: #fbfbfb url('https://axis111.googlecode.com/svn/down-arrow.png') no-repeat right;
-    background: #fbfbfb url('https://axis111.googlecode.com/svn/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis111/master/down-arrow.png') no-repeat right;
+    background: #fbfbfb url('https://raw.githubusercontent.com/adminlodhagroup/axis111/master/down-arrow.png') no-repeat right;
    appearance:none;
     -webkit-appearance:none; 
    -moz-appearance: none;
@@ -1950,7 +1950,7 @@ input.dp-applied {
             {}  
 	</style>
 		
-   <!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="https://axis111.googlecode.com/svn/mycssfile.css"/> -->
+   <!-- <link rel="stylesheet" type="text/css" media="screen, projection" href="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/mycssfile.css"/> -->
      <!-- Start with Single Sign-On -->
       
 	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
@@ -4695,7 +4695,7 @@ $(this).children().eq(15).css("display","none");
   //   var matched  =   window.location.hash;
    // alert(matched);
     
-			//$('head').append('<link rel="stylesheet" href="https://axis111.googlecode.com/svn/stylesheet.css" />');
+			//$('head').append('<link rel="stylesheet" href="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/stylesheet.css" />');
    
 			$("#Create_Case1").hide();
 			$("#ATTACHTOCASE").hide();
@@ -6011,29 +6011,29 @@ background: none repeat scroll 0 0 #FFF;
 </div>
 	    <!-- REMOVEFROMHERE PRASHANT-->
 	  
- <div id="overlay" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
-  <div id="overlay1" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal1" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+ <div id="overlay" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal" width="64" height="64" class="overmemodala" /><br>Loading..</div>
+  <div id="overlay1" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal1" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
 
- <div id="overlay2" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal2" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
-  <div id="overlay3" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal3" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
-   <div id="overlay4" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal4" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
-    <div id="overlay5" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal5" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
-	 <div id="overlay6" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal6" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
-	  <div id="overlay7" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal7" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
-	   <div id="overlay8" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
-	    <div id="overlay9" class="overmemodal" ><img src='https://axis111.googlecode.com/svn/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
+ <div id="overlay2" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal2" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+  <div id="overlay3" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal3" width="64" height="64" class="overmemodala"  /><br>Loading..</div>
+   <div id="overlay4" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal4" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
+    <div id="overlay5" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal5" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
+	 <div id="overlay6" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal6" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
+	  <div id="overlay7" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal7" width="64" height="64"  class="overmemodala"  /><br>Loading..</div>
+	   <div id="overlay8" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
+	    <div id="overlay9" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
 				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email To A Case</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
-                            <a href="#tab1"><img src="https://axis111.googlecode.com/svn/search.png"></a>
+                            <a href="#tab1"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/search.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab2" id="tagpng"><img src="https://axis111.googlecode.com/svn/tag.png"></a>
+                            <a href="#tab2" id="tagpng"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/tag.png"></a>
                         </li>
                         <li class="menuimage">
-                            <a href="#tab3"><img src="https://axis111.googlecode.com/svn/camera.png"></a>
+                            <a href="#tab3"><img src="https://raw.githubusercontent.com/adminlodhagroup/axis111/master/camera.png"></a>
                         </li>
                         <!--<li class="menuimage">
                             <img src="images/calendar.png">
@@ -6278,7 +6278,7 @@ background: none repeat scroll 0 0 #FFF;
               </div>
  
             <div id='loadingmessage' style='display:none'>
-              <img src='https://axis111.googlecode.com/svn/loading.gif'/>
+              <img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/loading.gif'/>
             </div>
  
  
