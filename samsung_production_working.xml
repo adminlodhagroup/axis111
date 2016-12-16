@@ -1994,7 +1994,32 @@ if($('#iTypes :selected').text()=='Operation'){
 	document.getElementById("natreq").disabled=true;
 }if($('#iTypes :selected').text()=='Service'){
 	document.getElementById("natreq").disabled=false;
+	$('#natreq')
+    .empty();
+	 //alert("Escalation values to be fetched.");
+	  var selectValues = { "1": "--None--","2": "Request for information", "3": "Request for service","4": "Complaint","5": "Feedback" };
+	  $.each(selectValues, function(key, value) {   
+		$('#natreq')
+         .append($("<option></option>")
+                    .attr("value",key)
+                    .text(value)); 
+			});
 }
+// ########## Escalation New Validation Phase-2 ########## 
+if($('#iTypes :selected').text()=='Escalation'){
+	document.getElementById("natreq").disabled=false;
+	$('#natreq')
+    .empty();
+	 //alert("Escalation values to be fetched.");
+	  var selectValues = {"--None--":"--None--","Level 1 Escalation": "Level 1 Escalation", "Level 2 Escalation": "Level 2 Escalation","Level 3 Escalation": "Level 3 Escalation" };
+	  $.each(selectValues, function(key, value) {   
+		$('#natreq')
+         .append($("<option></option>")
+                    .attr("value",key)
+                    .text(value)); 
+			});	
+}
+
 });
 //new validation
 
@@ -4655,6 +4680,23 @@ $(this).children().eq(15).css("display","none");
 		});
 	  
 	  
+	  //New Complaint Validation Change
+	  $('#iTypes').change(function(){
+			var getValue=$('#natreq').val();
+			
+			//if(getValue =="4" ) 
+			if(((getValue==null)||(getValue =="4")) && $('#iTypes :selected').text()=='Service') 
+			{
+			 alert($('#iTypes :selected').text());
+			$('.commongroup1').show();
+			$('.complaintngroup').show();
+			$('.grievgroup').hide();
+			}else{			
+			$('.commongroup1').hide();
+			$('.grievgroup').hide();
+			$('.complaintngroup').hide();
+			}
+			});
 	  
 	    
 	  
@@ -5370,7 +5412,7 @@ getCaseDetailsbyRegEmail(subject);
 			var intTypes = $('#iTypes :selected').text();
 			var ntReq = $("#natreq option:selected").text();
 			
-					if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
+				if(($('#iTypes :selected').text()=='Service') && ($("#natreq option:selected").text() =="--None--")){
 				alert("Please select Nature of request");
 				return false;
 			}
@@ -5378,6 +5420,17 @@ getCaseDetailsbyRegEmail(subject);
 				alert("Please select Nature of request");
 				return false;
 			}
+			
+			//####### Escalation Validation ##############
+				if(($('#iTypes :selected').text()=='Escalation') && ($("#natreq option:selected").text() =="--None--")){
+				alert("Please select Nature of request");
+				return false;
+			}
+			if(($('#iTypes :selected').text()=='Escalation') && ($("#natreq option:selected").text() =="")){
+				alert("Please select Nature of request");
+				return false;
+			}
+
             var reqc1="";
             var reqc2="";
 			
@@ -6023,7 +6076,7 @@ background: none repeat scroll 0 0 #FFF;
 	   <div id="overlay8" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal8" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 	    <div id="overlay9" class="overmemodal" ><img src='https://raw.githubusercontent.com/adminlodhagroup/axis111/master/ajax-loader.gif' id="imgmodal9" width="64" height="64" class="overmemodala"   /><br>Loading..</div>
 		 <div id="overlay10" class="overmemodal" ></div>
-				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email To A Case</div>	
+				<div style="top: 0;left: 0;margin-bottom: 3px;z-index: 100;font-size: 17px;font-weight: bold;background-color: #F2F2F2;color: #5C9E00;"> Tag This Email To A CASE</div>	
                   <div id="pre-sidepanel">
                     <ul id="verticalmenu">
                         <li class="menuimage" style="padding-top:32px;">
@@ -6099,6 +6152,7 @@ background: none repeat scroll 0 0 #FFF;
                             <option value="2" class="none2">Operation</option>
                             <option value="3" class="none3" >Promotion</option>
                             <option value="4" class="none4">Service</option>
+							<option value="5" class="none5">Escalation</option>
                             
                         </select>                   
                          </label>
@@ -6113,11 +6167,11 @@ background: none repeat scroll 0 0 #FFF;
                            <label>
                         <span>Nature Of Request:</span>
                         <select name="natreq"  required="required" id ="natreq" width="20">                        
-				<option value="1" >--None--</option>
+				<!-- <option value="1" >--None--</option>
                             <option value="2" >Request for information</option>
                             <option value="3" >Request for service</option>
                             <option value="4" >Complaint</option>
-                            <option value="5" >Feedback</option>
+                            <option value="5" >Feedback</option> -->
                         </select>
                     </label> 
                        <label>
@@ -6387,6 +6441,7 @@ background: none repeat scroll 0 0 #FFF;
             </div>
 			 <!-- REMOVEFROMHERE PRASHANT-->
 			  ]]>
+	]]>
   </Content>
 </Module>
 
