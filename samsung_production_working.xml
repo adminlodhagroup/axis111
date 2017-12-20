@@ -3966,7 +3966,7 @@ var url="https://email2case.lodhagroup.com:8443/lodhagadgetsalesforceProd/getAcc
 //var url="https://192.168.162.28:8443/lodhagadgetsalesforceProd/getAccountCaseDetails.jsp";
 $("#overlay4").css("display","block");
  $("#imgmodal4").css("display","block");
-  alert(data.casenumbers.length+"h1");
+  alert(email);
 $.ajax({  
 
 			type: "GET",
@@ -5759,7 +5759,7 @@ getBasicRandomDetails(email_id,"onload");
   {             
                 for(var i = 0; i < json.length; i++) {
     var obj = json[i];
-
+   alert(obj);
     console.log(obj.flatno);}}
 	
 	$( "#MEAN" ).mouseover(function() {
