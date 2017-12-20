@@ -3966,7 +3966,7 @@ var url="https://email2case.lodhagroup.com:8443/lodhagadgetsalesforceProd/getAcc
 //var url="https://192.168.162.28:8443/lodhagadgetsalesforceProd/getAccountCaseDetails.jsp";
 $("#overlay4").css("display","block");
  $("#imgmodal4").css("display","block");
-  alert(data.casenumbers.length);
+  alert(data.casenumbers.length+"h1");
 $.ajax({  
 
 			type: "GET",
@@ -3998,7 +3998,7 @@ $.ajax({
        $('#maintable1').find("tr:gt(0)").remove();
 	    $('#txtspanclosedcases').text(data.casenumbers.length);
 		 $('#closedCasesCountDiv').text(data.closedCases);
-           alert(data.casenumbers.length);
+           alert("h2"+data.casenumbers.length);
 	   if(data.casenumbers.length ==0)
 	   {
 	   $('#maintable1 tbody').append('<tr>No Data Found </tr>');
