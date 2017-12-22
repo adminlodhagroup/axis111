@@ -5367,7 +5367,7 @@ getCaseDetailsbyRegEmail(subject);
  
 		//Create Case click case Start	
 			$("#CREATECASE").click(function(){
-				//   alert("clciked button");
+				 alert("clciked button");
             
   
             
@@ -5513,7 +5513,7 @@ getCaseDetailsbyRegEmail(subject);
 				//var url1 = "https://192.168.162.28:8443/lodhagadgetsalesforceProd/createjsonCase.jsp";
 				//Changed request parameter names //pt
             var remarks=$("#txtremarks").val();
-  
+  alert(remarks);
    //added for prod issue right case owner 22Augst2014 [start]
 alert(email_body);
  var xznew = from_email;
